@@ -169,4 +169,4 @@ with gr.Blocks(css="#chatbot {overflow:auto; height:500px;}") as demo:
     
 
 
-demo.launch(server_name="0.0.0.0",enable_queue=True,)#share=True)
+demo.launch(server_name="0.0.0.0",enable_queue=True,share=True)
