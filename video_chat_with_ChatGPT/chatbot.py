@@ -67,7 +67,7 @@ class ConversationBot:
         self.memory.clear()
         if not openai_api_key.startswith('sk-'):
             return gr.update(visible = False),state, state, "Please paste your key here !"
-        self.llm = OpenAI(temperature=0, openai_api_key=openai_api_key,model_name="gpt-4")
+        self.llm = OpenAI(temperature=0, openai_api_key=openai_api_key,model_name="gpt-3.5-turbo")
         # openai.api_base = 'https://api.openai-proxy.com/v1/'  
         self.agent = initialize_agent(
             self.tools,
